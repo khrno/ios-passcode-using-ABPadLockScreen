@@ -7,9 +7,12 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "ABPadLockScreenViewController.h"
+#import "ABPadLockScreenSetupViewController.h"
 
-@interface ViewController : UIViewController
+@interface ViewController : UIViewController <ABPadLockScreenViewControllerDelegate, ABPadLockScreenViewControllerDelegate>
 
+- (IBAction)authButtonTapped:(id)sender;
 
 @end
 
